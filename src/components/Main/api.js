@@ -1,7 +1,6 @@
 const API_KEY = import.meta.env.VITE_API_KEY;
 const API_URL = import.meta.env.VITE_API_URL;
-console.log("API_KEY:", import.meta.env.VITE_API_KEY);
-console.log("API_URL:", import.meta.env.VITE_API_URL);
+
 
 export const fetchPopMovies = async () => {
   const response = await fetch(`${API_URL}/movie/popular?api_key=${API_KEY}`);
